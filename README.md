@@ -1,4 +1,4 @@
-# 🔔 Backend Push Notifications - Node.js + Vercel
+# 🔔 Backend Push Notifications - Node.js + Vercel.
 
 Backend Node.js para envío de notificaciones push de ExtraHostelero.
 
