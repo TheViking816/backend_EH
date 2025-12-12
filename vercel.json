@@ -11,12 +11,5 @@
       "src": "/api/(.*)",
       "dest": "/api/$1"
     }
-  ],
-  "env": {
-    "VAPID_PUBLIC_KEY": "@vapid-public-key",
-    "VAPID_PRIVATE_KEY": "@vapid-private-key",
-    "SUPABASE_URL": "@supabase-url",
-    "SUPABASE_SERVICE_ROLE_KEY": "@supabase-service-role-key",
-    "APP_URL": "@app-url"
-  }
+  ]
 }
