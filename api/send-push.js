@@ -113,7 +113,7 @@ function buildDeepLink(type, data) {
 /**
  * Handler principal (Vercel Serverless Function)
  */
-module.exports = async function handler(req, res) {
+module.exports = async (req, res) => {
   // CORS preflight
   if (req.method === 'OPTIONS') {
     return res.status(200).setHeader('Access-Control-Allow-Origin', '*')
