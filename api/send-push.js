@@ -3,8 +3,8 @@
 // ============================================
 // Endpoint: POST /api/send-push
 
-import webpush from 'web-push';
-import { createClient } from '@supabase/supabase-js';
+const webpush = require('web-push');
+const { createClient } = require('@supabase/supabase-js');
 
 // Configuración de VAPID (desde variables de entorno)
 const VAPID_PUBLIC_KEY = process.env.VAPID_PUBLIC_KEY;
@@ -113,7 +113,7 @@ function buildDeepLink(type, data) {
 /**
  * Handler principal (Vercel Serverless Function)
  */
-export default async function handler(req, res) {
+module.exports = async function handler(req, res) {
   // CORS preflight
   if (req.method === 'OPTIONS') {
     return res.status(200).setHeader('Access-Control-Allow-Origin', '*')
